@@ -4,11 +4,20 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>addition</servlet-name>
+        <servlet-name>servicemethodexample</servlet-name>
         <servlet-class>com.telusko.AddServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>addition</servlet-name>
+        <servlet-name>servicemethodexample</servlet-name>
         <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dogetdopostexample</servlet-name>
+        <servlet-class>com.telusko.DoGetDoPost</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dogetdopostexample</servlet-name>
+        <url-pattern>/addbypostreq</url-pattern>
     </servlet-mapping>
 </web-app>

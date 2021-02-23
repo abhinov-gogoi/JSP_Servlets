@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doGet and doPost method</title>
+</head>
+<body>
+    <!--    doGet and do Post-->
+    <h2>doGet() and doPost() instead of service() </h2>
+    <form action = "addbypostreq" method="post">
+        <p> The doGet() method is used for getting the information from server
+            while the doPost() method is used for sending information to the server.</br>
+        </p>
+
+        &lt;form action = "addbypostreq" method="post"&gt;&lt;/form&gt;<br>
+        <p>In HTML part now I am using a "post" method. Note the url pattern changes for post method.
+            In Chrome dev tools try changing it to a get req</p>
+        Enter 1st number : <input type="number" name="num1"> <br>
+        Enter 2nd number : <input type="number" name="num2"> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

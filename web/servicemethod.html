@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Method in Servlets</title>
+</head>
+<body>
+    <!--    Service() method in HttpServlet-->
+    <h1>The service() Method <br></h1>
+    <p>
+        The service() method is the main method to perform the actual task.<br>
+        The servlet container (i.e. web server, Tomcat in this case) calls the service() method to handle requests coming from the client(browser)<br>
+        and to write the formatted response back to the client.<br>
+
+        Each time the server receives a request for a servlet,<br>
+        the server spawns a new thread and calls service.<br>
+        The service() method checks the HTTP request type (GET, POST, PUT, DELETE, etc.)<br>
+        and calls doGet, doPost, doPut, doDelete, etc. methods as appropriate.</p>
+
+    <h3>    public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {<br>
+             // code here<br>
+            }
+    </h3>
+    <br>
+    <form action = "add">
+        <p>The service() method overrides the doGet() method or doPost() method or both.<br> By default in HTML form its a  get method.</p>
+        &lt;form action = "add"&gt;&lt;/form&gt;<br>
+        Enter 1st number : <input type="number" name="num1">
+        Enter 2nd number : <input type="number" name="num2">
+        <input type="submit">
+    </form>
+</body>
+</html>
