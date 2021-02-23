@@ -7,7 +7,9 @@ import java.io.PrintWriter;
 
 public class SquareServlet extends HttpServlet {
 
-    protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void service (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // int k = (int)req.getAttribute("k");  // use this if I had passed the req obj as attribute
+
         int sq = Integer.parseInt(req.getParameter("num"));
 
         PrintWriter out = resp.getWriter();

@@ -39,5 +39,14 @@
         <url-pattern>/square</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>sendredirect</servlet-name>
+        <servlet-class>com.telusko.callingaservlet.SendRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendredirect</servlet-name>
+        <url-pattern>/sendredirect</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

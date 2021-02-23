@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+// www.youtube.com/watch?v=kYzyXWmh37A&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46&index=11
 public class RequestDispatcherExample extends HttpServlet {
 
     protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
