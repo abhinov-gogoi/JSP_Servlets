@@ -7,16 +7,42 @@
 <body>
     <!--    doGet and do Post-->
     <h2>doGet() and doPost() instead of service() </h2>
-    <form action = "addbypostreq" method="post">
-        <p> The doGet() method is used for getting the information from server
-            while the doPost() method is used for sending information to the server.</br>
-        </p>
+    <code>
+        // This is the servlet which is called by the web.xml file when url path is \doGetdoPost</br>
+        public class DoGetDoPost extends HttpServlet {</br>
+            &emsp;&emsp;@Override</br>
+            &emsp;&emsp;protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {</br>
+            &emsp;&emsp;PrintWriter output = resp.getWriter();</br>
+            &emsp;&emsp;output.println("Access denieeed USER !! Cant change the HTML tag to \"get\" just like that");</br>
+            &emsp;&emsp;}</br>
+                </br>
+            &emsp;&emsp;@Override</br>
+            &emsp;&emsp;protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {</br>
+            &emsp;&emsp;int x =  Integer.parseInt(req.getParameter("num1"));</br>
+            &emsp;&emsp;int y =  Integer.parseInt(req.getParameter("num2"));</br>
+            &emsp;&emsp;int z = x+y;</br>
+            &emsp;&emsp;System.out.println("Result is = "+z);</br>
+                </br>
+            &emsp;&emsp;PrintWriter output = resp.getWriter();</br>
+            &emsp;&emsp;output.println("result is "+z);</br>
+            &emsp;&emsp;}</br>
+        }</br>
+    </code>
 
+    <p> The doGet() method is used for getting the information from server
+        while the doPost() method is used for sending information to the server.</br>
+    </p>
+
+    <h2>Add two Numbers<br></h2>
+
+    <p>In HTML part now I am using a "post" method. Note the url pattern changes for post method.
+        In Chrome dev tools try changing it to a get req</p>
+
+    <form action = "addbypostreq" method="post">
         &lt;form action = "addbypostreq" method="post"&gt;&lt;/form&gt;<br>
-        <p>In HTML part now I am using a "post" method. Note the url pattern changes for post method.
-            In Chrome dev tools try changing it to a get req</p>
-        Enter 1st number : <input type="number" name="num1"> <br>
-        Enter 2nd number : <input type="number" name="num2"> <br>
+
+        Enter 1st number : <input type="number" name="num1">
+        Enter 2nd number : <input type="number" name="num2">
         <input type="submit">
     </form>
 </body>

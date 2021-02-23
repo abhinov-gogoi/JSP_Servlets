@@ -20,4 +20,24 @@
         <servlet-name>dogetdopostexample</servlet-name>
         <url-pattern>/addbypostreq</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>requestdispatcherexample</servlet-name>
+        <servlet-class>com.telusko.callingaservlet.RequestDispatcherExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestdispatcherexample</servlet-name>
+        <url-pattern>/requestdispatcher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>squareservlet</servlet-name>
+        <servlet-class>com.telusko.callingaservlet.SquareServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>squareservlet</servlet-name>
+        <url-pattern>/square</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
