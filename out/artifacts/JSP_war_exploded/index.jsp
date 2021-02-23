@@ -13,7 +13,7 @@
 
   <body>
   <h1>Add Two Numbers2 INDEX.JSP</h1>
-  <form action = "add">
+  <form action = "add" method="post">
     Enter 1st number : <input type="number" name="num1"> <br>
     Enter 2nd number : <input type="number" name="num2">
     <input type="submit">

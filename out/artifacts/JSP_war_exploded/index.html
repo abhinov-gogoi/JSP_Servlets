@@ -5,12 +5,27 @@
     <title>JSP Servlet</title>
 </head>
 <body>
-    <h1>Add Two Numbers Index.html</h1>
-    <form action = "add">
+    <h2>public void service (HttpServletRequest req, HttpServletResponse res)</h2>
+    <form action = "add" method="post">
+        <p> the service() method overrides the doGet() method or doPost() method or both.</br>
+            By default in HTML form its a  get method.</p>
+
+        &lt;form action = "add"&gt;&lt;/form&gt;
         Cool !!
         Enter 1st number : <input type="number" name="num1"> <br>
         Enter 2nd number : <input type="number" name="num2">
         <input type="submit">
     </form>
+<!--    <h2>doGet() and doPost() instead of service() </h2>-->
+<!--    <p> The doGet() method is used for getting the information from server</br>-->
+<!--        while the doPost() method is used for sending information to the server.</br>-->
+<!--        In HTML now we are using a "get" method</p>-->
+<!--    <code><form action = "add" method="post"></form></code>-->
+<!--    <form action = "add2" method="post">-->
+<!--        Cool !!-->
+<!--        Enter 1st number : <input type="number" name="num1"> <br>-->
+<!--        Enter 2nd number : <input type="number" name="num2">-->
+<!--        <input type="submit">-->
+<!--    </form>-->
 </body>
 </html>
