@@ -14,12 +14,11 @@ Automatically it will extend HttpServlet class and implement service() method. <
 
 <%--Note that I am action button is calling Add.jsp directly, No need of putting into web.xml file --%>
 <h2>Add two Numbers<br></h2>
-<form action = "Add.jsp" method="get">
+<form action = "Add.jsp">
     Enter 1st number : <input type="number" name="num1">
     Enter 2nd number : <input type="number" name="num2">
     <input type="submit">
 </form>
-
 
 <%--Directive tag--%>
 <%@

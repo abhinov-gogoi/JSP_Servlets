@@ -36,8 +36,15 @@
 
     <p>The service() method overrides the doGet() method or doPost() method or both.<br> By default in the HTML form tag, its a  get method if we donot specify any type.</p>
     &lt;form action = "add"&gt;&lt;/form&gt;<br>
-    <h2>Add two Numbers<br></h2>
+    <h2>Add two Numbers using AddServlet<br></h2>
     <form action = "add" method="get">
+        Enter 1st number : <input type="number" name="num1">
+        Enter 2nd number : <input type="number" name="num2">
+        <input type="submit">
+    </form>
+
+    <h2>Add two Numbers using Add.jsp<br></h2>
+    <form action = "Add.jsp" method="get">
         Enter 1st number : <input type="number" name="num1">
         Enter 2nd number : <input type="number" name="num2">
         <input type="submit">
