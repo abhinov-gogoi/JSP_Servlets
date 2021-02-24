@@ -17,6 +17,7 @@
     2. <a href="http://localhost:8080/Tags.jsp">Tags in JSP</a><br>
     3. <a href="http://localhost:8080/Add.jsp?num1=0&num2=0"> Add.jsp <=> AddServlet</a> - (initially passing num1=0 and num2=0 by url)<br>
     4. <a href="http://localhost:8080/ImplicitObjects.jsp">ImplicitObjects in JSP</a><br>
+    5. <a href="http://localhost:8080/ErrorExample.jsp">Exception Handling</a><br>
 
 </body>
 </html>
