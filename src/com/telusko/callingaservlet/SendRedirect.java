@@ -17,5 +17,6 @@ public class SendRedirect extends HttpServlet {
 
         int k = Integer.parseInt(req.getParameter("num"));
         resp.sendRedirect("/square?num="+k);
+        // This is called URL rewriting
     }
 }
