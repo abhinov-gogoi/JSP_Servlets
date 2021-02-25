@@ -12,7 +12,9 @@
 </head>
 <body bgcolor="#8b0000">
 <h1>***********    ERROR    ***********</h1>
-<%= exception %>
+<%= exception%> <br>
+<%= exception.getMessage() %> <br>
+<%= exception.getStackTrace() %> <br>
 
 </body>
 </html>
